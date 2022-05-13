@@ -1,0 +1,165 @@
+<html>
+
+<head>
+  <title>Real Time Image Identification App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <!--Header-->
+  <div class="header">
+    <img src="google_lens.png" class="google_lens"> Google Lens &nbsp;&nbsp;
+    <span style="color: red;">  V</span><span style="color: rgb(85, 85, 255);"> S&nbsp; &nbsp;  </span>
+    <button style="font-size: 25px;" class="btn btn-primary">MobileNet</button>
+  </div >
+
+  <div class="container">
+    <!--Object 1-->
+    <ol>
+      <div class="test_image_div col-xs-12 col-sm-12col-md-12col-lg-12">
+
+        <li class="col-sm-4 col-xs-12">
+          <b style="font-size: 25px;">Test Image - Bottle </b>
+          <img src="1.jfif" class="img-responsive test_image">
+        </li>
+
+        <h5 style="font-size :25px" class="col-sm-4 col-xs-12">
+          Output On <b>Google Lens :</b>
+          <span> </span>
+        </h5>
+        <h5 style="font-size :25px" class="col-sm-4 col-xs-12">
+          Output On <p class="btn btn-primary mobileNet">MobileNet</p> :
+          <span> </span>
+        </h5>
+
+        <hr style="border: 1px white solid;">
+
+        <div class="main_result" class="col-xs-12">
+          <h4>Result :- </h4>
+
+        </div>
+      </div>
+    </ol>
+    <!--Object 2-->
+    <ol>
+      <div class="test_image_div col-xs-12 col-sm-12col-md-12col-lg-12">
+
+        <li class="col-sm-4 col-xs-12">
+          <b style="font-size: 25px;">Test Image - Watch</b>
+          <img src="2.jpg" class="img-responsive test_image">
+        </li>
+
+        <h5 style="font-size :25px" class="col-sm-4 col-xs-12">
+          Output On <b>Google Lens :</b>
+          <span> </span>
+        </h5>
+        <h5 style="font-size :25px" class="col-sm-4 col-xs-12">
+          Output On <p class="btn btn-primary mobileNet">MobileNet</p> :
+          <span> </span>
+        </h5>
+
+        <hr style="border: 1px white solid;">
+
+        <div class="main_result" class="col-xs-12">
+          <h4>Result :- </h4>
+
+        </div>
+      </div>
+    </ol>
+    <!--Object 3-->
+    <ol>
+      <div class="test_image_div col-xs-12 col-sm-12col-md-12col-lg-12">
+
+        <li class="col-sm-4 col-xs-12">
+          <b style="font-size: 25px;">Test Image - Chair</b>
+          <img src="3.jfif" class="img-responsive test_image">
+        </li>
+
+        <h5 style="font-size :25px" class="col-sm-4 col-xs-12">
+          Output On <b>Google Lens :</b>
+          <span> </span>
+        </h5>
+        <h5 style="font-size :25px" class="col-sm-4 col-xs-12">
+          Output On <p class="btn btn-primary mobileNet">MobileNet</p> :
+          <span> </span>
+        </h5>
+
+        <hr style="border: 1px white solid;">
+
+        <div class="main_result" class="col-xs-12">
+          <h4>Result :- </h4>
+
+        </div>
+      </div>
+    </ol>
+    <!--Object 4-->
+    <ol>
+      <div class="test_image_div col-xs-12 col-sm-12col-md-12col-lg-12">
+
+        <li class="col-sm-4 col-xs-12">
+          <b style="font-size: 25px;">Test Image - TV</b>
+          <img src="4.jfif" class="img-responsive test_image">
+        </li>
+
+        <h5 style="font-size :25px" class="col-sm-4 col-xs-12">
+          Output On <b>Google Lens :</b>
+          <span> </span>
+        </h5>
+        <h5 style="font-size :25px" class="col-sm-4 col-xs-12">
+          Output On <p class="btn btn-primary mobileNet">MobileNet</p> :
+          <span> </span>
+        </h5>
+
+        <hr style="border: 1px white solid;">
+
+        <div class="main_result" class="col-xs-12">
+          <h4>Result :- </h4>
+
+        </div>
+      </div>
+    </ol>
+    <!--Object 5-->
+    <ol>
+      <div class="test_image_div col-xs-12 col-sm-12col-md-12col-lg-12">
+
+        <li class="col-sm-4 col-xs-12">
+          <b style="font-size: 25px;">Test Image - Camera</b>
+          <img src="5.jfif" class="img-responsive test_image">
+        </li>
+
+        <h5 style="font-size :25px" class="col-sm-4 col-xs-12">
+          Output On <b>Google Lens :</b>
+          <span> </span>
+        </h5>
+        <h5 style="font-size :25px" class="col-sm-4 col-xs-12">
+          Output On <p class="btn btn-primary mobileNet">MobileNet</p> :
+          <span> </span>
+        </h5>
+
+        <hr style="border: 1px white solid;">
+
+        <div class="main_result" class="col-xs-12">
+          <h4>Result :- </h4>
+
+        </div>
+      </div>
+    </ol>
+  </div>
+  <!--Footer-->
+  <div class="copy_right_footer">
+    <p>&copy;Developed By Bhaskar Krishnan</p>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
